@@ -1,0 +1,25 @@
+{
+    "name": "piasiu/saq-trans",
+    "type": "library",
+    "description": "Extension to the Saq framework for translate support",
+    "keywords": ["piasiu","saq","twig","view","extension"],
+    "homepage": "https://github.com/Piasiu/saq-trans",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paweł Piaskowy",
+            "email": "pawel@piaskowy.net",
+            "homepage": "http://piaskowy.net"
+        }
+    ],
+    "require": {
+        "php": ">=8.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Saq\\Trans\\": "src"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
