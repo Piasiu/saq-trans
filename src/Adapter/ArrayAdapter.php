@@ -10,6 +10,8 @@ class ArrayAdapter implements AdapterInterface
      */
     public function loadFromFile(string $filePath): array
     {
+        $filePath .= '.php';
+
         if (file_exists($filePath))
         {
             $data = include($filePath);

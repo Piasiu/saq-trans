@@ -10,6 +10,8 @@ class JsonAdapter implements AdapterInterface
      */
     public function loadFromFile(string $filePath): array
     {
+        $filePath .= '.json';
+
         if (file_exists($filePath))
         {
             $data = json_decode($filePath, true);
