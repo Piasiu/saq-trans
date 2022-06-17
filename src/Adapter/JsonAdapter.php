@@ -3,7 +3,7 @@ namespace Saq\Trans\Adapter;
 
 use Saq\Trans\AdapterInterface;
 
-class ArrayAdapter implements AdapterInterface
+class JsonAdapter implements AdapterInterface
 {
     /**
      * @inheritDoc
@@ -12,7 +12,7 @@ class ArrayAdapter implements AdapterInterface
     {
         if (file_exists($filePath))
         {
-            $data = include($filePath);
+            $data = json_decode($filePath, true);
 
             if (is_array($data))
             {

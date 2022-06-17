@@ -4,8 +4,8 @@ namespace Saq\Trans;
 interface AdapterInterface
 {
     /**
-     * @param string $fileName
+     * @param string $filePath
      * @return array
      */
-    public function loadFromFile(string $fileName): array;
+    public function loadFromFile(string $filePath): array;
 }
