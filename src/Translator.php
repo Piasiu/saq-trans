@@ -87,9 +87,9 @@ class Translator
         {
             $pluralForm = $language->getPluralForm($value);
 
-            if (is_string($this->data[$text][$pluralForm]))
+            if (is_string($data[$text][$pluralForm]))
             {
-                $text = $this->data[$text][$pluralForm];
+                $text = $data[$text][$pluralForm];
             }
         }
 
