@@ -46,7 +46,7 @@ class Translator
     {
         $this->path = $path;
         $this->adapter = $adapter;
-        $this->addLanguage($defaultLanguage ?? new En());
+        $this->addLanguage($defaultLanguage ?? new En(), true);
         $this->delimiter = $delimiter;
     }
 
