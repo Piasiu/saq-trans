@@ -1,5 +1,5 @@
 <?php
-namespace Saq\Trans\PluralForm;
+namespace Saq\Trans\Language;
 
 use Saq\Trans\LanguageInterface;
 
