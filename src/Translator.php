@@ -62,7 +62,7 @@ class Translator
         $language = $this->getLanguage($languageCode);
         $data = $this->getData($language, $fileSubPath);
 
-        if (isset($text, $data) && is_string($data[$text]))
+        if (isset($data[$text]) && is_string($data[$text]))
         {
             $text = $data[$text];
         }
@@ -83,7 +83,7 @@ class Translator
         $language = $this->getLanguage($languageCode);
         $data = $this->getData($language, $fileSubPath);
 
-        if (isset($text, $data) && is_array($data[$text]) && count($data[$text]) === $language->getNumberOfPluralForms())
+        if (isset($data[$text]) && is_array($data[$text]) && count($data[$text]) === $language->getNumberOfPluralForms())
         {
             $pluralForm = $language->getPluralForm($value);
 
