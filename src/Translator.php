@@ -2,7 +2,7 @@
 namespace Saq\Trans;
 
 use JetBrains\PhpStorm\Pure;
-use Saq\Trans\PluralForm\En;
+use Saq\Trans\Language\En;
 
 class Translator
 {
