@@ -2,7 +2,7 @@
 namespace Saq\Trans;
 
 use JetBrains\PhpStorm\Pure;
-use Saq\Trans\PluralForm\En;
+use Saq\Trans\Language\En;
 
 class Translator
 {
@@ -175,7 +175,7 @@ class Translator
     {
         foreach ($parameters as $name => $value)
         {
-            $text = str_replace('__'.$name.'__', $value, $text);
+            $text = str_replace($this->delimiter.$name.$this->delimiter, $value, $text);
         }
 
         return $text;
