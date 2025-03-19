@@ -3,14 +3,14 @@ namespace Saq\Trans\Language;
 
 use Saq\Trans\LanguageInterface;
 
-class En implements LanguageInterface
+class Fr implements LanguageInterface
 {
     /**
      * @inheritDoc
      */
     public function getCode(): string
     {
-        return 'en';
+        return 'fr';
     }
 
     /**
@@ -26,6 +26,6 @@ class En implements LanguageInterface
      */
     public function getPluralForm(int $value): int
     {
-        return $value !== 1 ? 1 : 0;
+        return $value > 1 ? 1 : 0;
     }
 }

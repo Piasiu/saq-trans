@@ -3,14 +3,14 @@ namespace Saq\Trans\Language;
 
 use Saq\Trans\LanguageInterface;
 
-class En implements LanguageInterface
+class Nl implements LanguageInterface
 {
     /**
      * @inheritDoc
      */
     public function getCode(): string
     {
-        return 'en';
+        return 'nl';
     }
 
     /**
